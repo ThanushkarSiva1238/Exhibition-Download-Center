@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exhibition Download Center — Explore. Learn. Download.</title>
+<meta name="description" content="Official digital download center for the university exhibition — demonstration video, application, and study materials.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Background sigil texture, decorative only -->
+<div class="bg-field" aria-hidden="true">
+  <svg class="bg-lattice" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+    <defs>
+      <pattern id="lattice" width="120" height="120" patternUnits="userSpaceOnUse">
+        <path d="M60 0 L120 60 L60 120 L0 60 Z" fill="none" stroke="var(--steel-line)" stroke-width="1"/>
+        <circle cx="60" cy="60" r="2" fill="var(--steel-line)"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#lattice)"/>
+  </svg>
+</div>
+
+<a id="top" class="visually-hidden" href="#top">Top of page</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#top" data-scroll-top aria-label="Exhibition Download Center — home">
+      <span class="brand-seal" aria-hidden="true">
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="24,3 42,13.5 42,34.5 24,45 6,34.5 6,13.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <polygon points="24,12 34.4,18 34.4,30 24,36 13.6,30 13.6,18" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <circle cx="24" cy="24" r="3.4" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-title">Exhibition Download Center</span>
+        <span class="brand-sub">Official Academic Exhibition Resource Portal</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#top" data-scroll-top>Home</a>
+      <a href="#video">Video</a>
+      <a href="#materials">Downloads</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-inner">
+      <div class="hero-emblem" aria-hidden="true">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="emblem-svg">
+          <g class="emblem-ring emblem-ring--outer">
+            <circle cx="100" cy="100" r="92" fill="none" stroke="var(--emerald-dim)" stroke-width="1"/>
+            <g class="emblem-ticks">
+              <!-- generated tick marks -->
+            </g>
+          </g>
+          <polygon class="emblem-hex emblem-hex--a" points="100,20 165,58 165,142 100,180 35,142 35,58" fill="none" stroke="var(--gold)" stroke-width="1.2"/>
+          <polygon class="emblem-hex emblem-hex--b" points="100,45 143,68 143,132 100,155 57,132 57,68" fill="none" stroke="var(--emerald)" stroke-width="1.4"/>
+          <path class="emblem-mark" d="M100 78 L120 100 L100 122 L80 100 Z" fill="var(--emerald)" opacity="0.9"/>
+          <circle cx="100" cy="100" r="4.5" fill="var(--gold)"/>
+        </svg>
+      </div>
+
+      <p class="eyebrow">Explore. Learn. Download.</p>
+      <h1 id="hero-title">Exhibition Download Center</h1>
+      <p class="hero-lede">Access the exhibition demonstration, study materials, application files, and supporting resources in one place.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn--primary" href="#materials">Explore Materials</a>
+        <a class="btn btn--ghost" href="#video">Watch the Demonstration</a>
+      </div>
+    </div>
+    <div class="hero-floor" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ VIDEO ============ -->
+  <section class="section" id="video" aria-labelledby="video-title">
+    <div class="section-inner">
+      <p class="kicker">Watch</p>
+      <h2 id="video-title">Exhibition Demonstration</h2>
+      <p class="section-lede">Watch the complete demonstration of our exhibition and explore how the system works.</p>
+
+      <div class="video-frame">
+        <div class="video-frame__corner video-frame__corner--tl" aria-hidden="true"></div>
+        <div class="video-frame__corner video-frame__corner--tr" aria-hidden="true"></div>
+        <div class="video-frame__corner video-frame__corner--bl" aria-hidden="true"></div>
+        <div class="video-frame__corner video-frame__corner--br" aria-hidden="true"></div>
+
+        <div class="video-wrap">
+          <iframe
+            id="exhibition-video"
+            src="https://drive.google.com/file/d/18DMyWuh_XK_lBLnPRKLCVNNS-WAXqnfM/preview"
+            title="Exhibition demonstration video"
+            allow="autoplay; fullscreen"
+            loading="lazy">
+          </iframe>
+        </div>
+        <p class="video-hosted-note">Hosted on Google Drive — playback and download happen on Google's player above.</p>
+
+        <div class="video-meta">
+          <div class="video-meta__item">
+            <span class="video-meta__label">Format</span>
+            <span class="video-meta__value" id="meta-format">MP4</span>
+          </div>
+          <div class="video-meta__item">
+            <span class="video-meta__label">Size</span>
+            <span class="video-meta__value" id="meta-size">32.9 MB</span>
+          </div>
+          <div class="video-meta__item">
+            <span class="video-meta__label">Duration</span>
+            <span class="video-meta__value" id="meta-duration">15:59</span>
+          </div>
+        </div>
+
+        <div class="video-actions">
+          <a class="btn btn--primary" href="https://drive.google.com/file/d/18DMyWuh_XK_lBLnPRKLCVNNS-WAXqnfM/view" target="_blank" rel="noopener">⬇ Download Video</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MATERIALS ============ -->
+  <section class="section section--panel" id="materials" aria-labelledby="materials-title">
+    <div class="section-inner">
+      <p class="kicker">Download</p>
+      <h2 id="materials-title">Exhibition Materials</h2>
+      <p class="section-lede">Download the resources used during the exhibition and continue exploring the project at home.</p>
+
+      <!-- Featured application -->
+      <article class="card card--featured">
+        <div class="card__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40"><path d="M8 6h24v20l-8 8H8z" fill="none" stroke="var(--emerald)" stroke-width="1.6"/><path d="M24 6v10h8" fill="none" stroke="var(--emerald)" stroke-width="1.6"/></svg>
+        </div>
+        <div class="card__body">
+          <h3>Subtitle Edit</h3>
+          <p>Open the application page to download and play the interactive translation challenge on a Windows computer.</p>
+          <dl class="card__specs">
+            <div><dt>File Type</dt><dd>.zip</dd></div>
+            <div><dt>Platform</dt><dd>Windows</dd></div>
+            <div><dt>Purpose</dt><dd>Interactive Translation Challenge</dd></div>
+          </dl>
+          <a class="btn btn--primary" href="https://github.com/SubtitleEdit/subtitleedit/releases" target="_blank" rel="noopener">⬇ View &amp; Download Application</a>
+          <p class="card__note">Opens an external page. Windows application — download and run only on a trusted computer.</p>
+        </div>
+      </article>
+
+      <!-- PDF cards -->
+      <div class="card-grid">
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M9 4h16l6 6v26H9z" fill="none" stroke="var(--gold)" stroke-width="1.6"/><path d="M25 4v6h6" fill="none" stroke="var(--gold)" stroke-width="1.6"/><text x="12" y="26" font-family="IBM Plex Mono, monospace" font-size="7" fill="var(--gold)">PDF</text></svg>
+          </div>
+          <div class="card__body">
+            <h3>Subtitle_Edit Guide Document</h3>
+            <p>Read the complete documentation and background information related to the exhibition.</p>
+            <dl class="card__specs">
+              <div><dt>File Type</dt><dd>PDF</dd></div>
+            </dl>
+            <a class="btn btn--secondary" href="downloads/Subtitle_Edit-Documentation.pdf" download>⬇ Download PDF</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M9 4h16l6 6v26H9z" fill="none" stroke="var(--gold)" stroke-width="1.6"/><path d="M25 4v6h6" fill="none" stroke="var(--gold)" stroke-width="1.6"/><text x="12" y="26" font-family="IBM Plex Mono, monospace" font-size="7" fill="var(--gold)">PDF</text></svg>
+          </div>
+          <div class="card__body">
+            <h3>Practice Materials</h3>
+            <p>Explore the educational material explained in the subtitle editing video and the concepts demonstrated during the exhibition.</p>
+            <dl class="card__specs">
+              <div><dt>File Type</dt><dd>ZIP</dd></div>
+            </dl>
+            <a class="btn btn--secondary" href="downloads/Subtitle_Edit Practice Materials.zip" download>⬇ Download ZIP</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Quotes of the Day ============ -->
+  <section class="section section--quote" id="resources" aria-labelledby="resources-title">
+    <div class="section-inner section-inner--narrow">
+      <p class="kicker">Explore Further</p>
+      <h2 id="resources-title">Quotes of the Day</h2>
+
+      <blockquote class="quote-box" id="quote-box">
+        <p class="quote-box__text" id="quote-text">Loading a quote…</p>
+        <cite class="quote-box__author" id="quote-author"></cite>
+      </blockquote>
+
+      <div class="quote-nav">
+        <button class="btn btn--ghost" id="prev-quote-btn" type="button" aria-label="Previous quote">‹ Prev</button>
+        <span class="quote-counter" id="quote-counter" aria-live="polite">1 / 1</span>
+        <button class="btn btn--ghost" id="next-quote-btn" type="button" aria-label="Next quote">Next ›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DID YOU KNOW ============ -->
+  <section class="section section--fact" id="fact" aria-labelledby="fact-title">
+    <div class="section-inner section-inner--narrow">
+      <p class="kicker">Did You Know?</p>
+      <h2 id="fact-title" class="visually-hidden">Did You Know</h2>
+      <blockquote class="fact-box" id="fact-box">
+        <p id="fact-text">Loading a fact…</p>
+      </blockquote>
+      <button class="btn btn--ghost" id="another-fact-btn" type="button">Another Fact</button>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT / TEAM ============ -->
+  <section class="section section--panel" id="about" aria-labelledby="team-title">
+    <div class="section-inner">
+      <p class="kicker">With Gratitude</p>
+      <h2 id="team-title">With Gratitude</h2>
+      <p class="section-lede">This exhibition was made possible through the collaboration, guidance, and support of everyone involved.</p>
+
+      <div class="team-group">
+        <h3 class="team-group__title">Exhibition Team</h3>
+        <div class="card-grid card-grid--team">
+          <div class="profile-card">
+            <p class="profile-card__name">Yasotharakumar Thamurshan</p>
+            <p class="profile-card__role">Exhibition Coordinator/ Content Developer</p>
+          </div>
+          <div class="profile-card">
+            <p class="profile-card__name">Sivakumar Thanushkar</p>
+            <p class="profile-card__role">Project Developer/ Technical Support</p>
+          </div>
+          <div class="profile-card">
+            <p class="profile-card__name">M.F. Nahadhiya Maryam</p>
+            <p class="profile-card__role">Research/ Presenter</p>
+          </div>
+          <div class="profile-card">
+            <p class="profile-card__name">M.F. Fathima Farhath</p>
+            <p class="profile-card__role">Research/ Presenter</p>
+          </div>
+          <div class="profile-card">
+            <p class="profile-card__name">S. Tishaliny</p>
+            <p class="profile-card__role">Research/ Presenter</p>
+          </div>
+          <div class="profile-card">
+            <p class="profile-card__name">A.W.F. Rusaifa</p>
+            <p class="profile-card__role">Research/ Presenter</p>
+          </div>
+          <div class="profile-card">
+            <p class="profile-card__name">S. Thikaliny</p>
+            <p class="profile-card__role">Research/ Presenter</p>
+          </div>
+          <div class="profile-card">
+            <p class="profile-card__name">A. Mary Pausthina Mark</p>
+            <p class="profile-card__role">Research/ Presenter</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-group">
+        <h3 class="team-group__title">Academic &amp; Technical Support</h3>
+        <div class="card-grid card-grid--team">
+          <div class="profile-card">
+            <p class="profile-card__name">[Supervisor / Lecturer]</p>
+            <p class="profile-card__role">Academic Supervision</p>
+          </div>
+          <div class="profile-card">
+            <p class="profile-card__name">[Supporting Staff]</p>
+            <p class="profile-card__role">Technical Support</p>
+          </div>
+          <div class="profile-card">
+            <p class="profile-card__name">[Other Contributors]</p>
+            <p class="profile-card__role">Contribution</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLOSING ============ -->
+  <section class="section section--closing" aria-labelledby="closing-title">
+    <div class="section-inner section-inner--narrow">
+      <h2 id="closing-title">Thank You for Supporting Our Exhibition</h2>
+      <p>We sincerely thank our lecturers, supervisors, colleagues, friends, visitors, and everyone who supported this exhibition.</p>
+      <p class="closing-emphasis">Your interest, participation, and support helped bring this project to life.</p>
+      <a class="btn btn--ghost" href="#top" data-scroll-top>Back to Top</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="brand-seal brand-seal--footer" aria-hidden="true">
+      <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="24,3 42,13.5 42,34.5 24,45 6,34.5 6,13.5" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <circle cx="24" cy="24" r="3" fill="currentColor"/>
+      </svg>
+    </span>
+    <p class="footer-title">Exhibition Download Center</p>
+    <p class="footer-line">Created and presented by</p>
+    <p class="footer-name">Yasotharakumar Thamurshan</p>
+    <p class="footer-line">Group Members</p>
+    <ul class="footer-members">
+      <li>M.F. Nahadhiya Maryam</li>
+      <li>M.F. Fathima Farhath</li>
+      <li>S. Tishaliny</li>
+      <li>A.W.F. Rusaifa</li>
+      <li>S. Thikaliny</li>
+      <li>A. Mary Pausthina Mark</li>
+    </ul>
+    <p class="footer-line">University Exhibition Project — 2026</p>
+    <p class="footer-copyright">© 2026 Thanushkar Sivakumar. All Rights Reserved.</p>
+    <p class="footer-note">For Academic and Educational Purposes</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
