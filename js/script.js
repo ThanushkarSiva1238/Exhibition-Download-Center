@@ -67,6 +67,30 @@
       text: `What’s so fun about getting everything easily? The real beauty is in finding what we want, struggling for it, and finally getting there. \nFind. Ask. Pursue. Apply. \n\nJust like translation.`,
       author: "Yasotharakumar Thamurshan"
     },
+    {
+      text: `AI may translate words with ease, but human translators recreate meaning. Behind every translation are research, thought, and countless sacrifices.`,
+      author: "Mary Pauthina Mark"
+    },
+    {
+      text: `An AI translates what was said. A human translates what was meant.`,
+      author: "M. F. Nahdhiya Maryam"
+    },
+    {
+      text: `If you think AI can translate better than a human, remember: even the most advanced AI still needs a human to give it instructions.`,
+      author: "M. H. Fathima Farhath"
+    },
+    {
+      text: `AI processes language in seconds; Humans shape it through context, culture & the world behind the words.`,
+      author: "A. W. F. Rusaifa"
+    },
+    {
+      text: `AI can process language. A human understands the message behind it.`,
+      author: "S. Thikaliny"
+    },
+    {
+      text: `Too long, and it gets missed. Too short, and it loses meaning. \nThe art isn't just knowing two languages it's knowing how to fit an entire culture into two lines and two seconds.`,
+      author: "S. Tishaliny"
+    },
   ];
 
   var quoteText = document.getElementById("quote-text");
